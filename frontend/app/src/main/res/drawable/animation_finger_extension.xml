@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    
+    <!-- Finger Extension/Spreading Animation - Clear Spreading Motion -->
+    <!-- Fingers together (starting position) -->
+    <item android:drawable="@drawable/fingers_together" android:duration="1000" />
+    <!-- Begin spreading fingers -->
+    <item android:drawable="@drawable/fingers_spreading" android:duration="600" />
+    <!-- Continue spreading -->
+    <item android:drawable="@drawable/fingers_spreading" android:duration="400" />
+    <!-- Fingers fully spread -->
+    <item android:drawable="@drawable/fingers_spread" android:duration="1200" />
+    <!-- Begin closing fingers -->
+    <item android:drawable="@drawable/fingers_closing_spread" android:duration="600" />
+    <!-- Continue closing -->
+    <item android:drawable="@drawable/fingers_closing_spread" android:duration="400" />
+    <!-- Back to fingers together -->
+    <item android:drawable="@drawable/fingers_together" android:duration="500" />
+    
+</animation-list>

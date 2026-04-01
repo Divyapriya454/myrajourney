@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "data": {
+    "upcomingAppointment": {"title": "Consultation", "start_time": "2025-12-15T10:30:00Z"},
+    "recentReports": [],
+    "unreadNotifications": 0,
+    "latestMetrics": []
+  }
+}
+

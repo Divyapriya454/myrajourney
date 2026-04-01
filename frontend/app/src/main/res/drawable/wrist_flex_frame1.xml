@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="600dp"
+    android:height="400dp"
+    android:viewportWidth="600"
+    android:viewportHeight="400">
+    
+    <!-- Full Body Wrist Flexion - Neutral Position -->
+    
+    <!-- Person's torso/chest -->
+    <path
+        android:fillColor="#E8B896"
+        android:pathData="M200,150 L400,150 L420,250 L180,250 Z" />
+    
+    <!-- Shoulder -->
+    <path
+        android:fillColor="#D4A574"
+        android:pathData="M180,150 A25,25 0 1,1 230,150 A25,25 0 1,1 180,150 Z" />
+    
+    <!-- Upper arm -->
+    <path
+        android:fillColor="#E8B896"
+        android:pathData="M180,175 L220,175 L240,220 L160,220 Z" />
+    
+    <!-- Elbow joint -->
+    <path
+        android:fillColor="#D4A574"
+        android:pathData="M190,215 A15,15 0 1,1 210,215 A15,15 0 1,1 190,215 Z" />
+    
+    <!-- Forearm (horizontal) -->
+    <path
+        android:fillColor="#E8B896"
+        android:pathData="M200,200 L450,200 L450,240 L200,240 Z" />
+    
+    <!-- Wrist joint (neutral position) -->
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M440,215 A12,12 0 1,1 440,225 A12,12 0 1,1 440,215 Z" />
+    
+    <!-- Hand (neutral position - straight alignment) -->
+    <path
+        android:fillColor="#E8B896"
+        android:pathData="M450,180 L520,180 L520,260 L450,260 Z" />
+    
+    <!-- Fingers (straight) -->
+    <path android:fillColor="#E8B896" android:pathData="M460,160 L480,160 L480,180 L460,180 Z" />
+    <path android:fillColor="#E8B896" android:pathData="M485,155 L505,155 L505,180 L485,180 Z" />
+    <path android:fillColor="#E8B896" android:pathData="M510,150 L530,150 L530,180 L510,180 Z" />
+    <path android:fillColor="#E8B896" android:pathData="M535,155 L555,155 L555,180 L535,180 Z" />
+    
+    <!-- Thumb -->
+    <path
+        android:fillColor="#E8B896"
+        android:pathData="M430,200 L460,185 L470,205 L440,220 Z" />
+    
+    <!-- Movement indicator arrows (up and down) -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M480,120 L485,110 L490,120 L485,100 L475,110 Z" />
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M480,300 L485,310 L490,300 L485,320 L475,310 Z" />
+    
+    <!-- Instruction area -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M50,50 L550,50 L550,100 L50,100 Z"
+        android:fillAlpha="0.1" />
+        
+</vector>

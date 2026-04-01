@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="350dp"
+    android:viewportWidth="400"
+    android:viewportHeight="350">
+    
+    <!-- Thumb Opposition Frame 2 - Touching Index Finger -->
+    
+    <!-- Forearm -->
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M150,250 L250,250 L250,300 L150,300 Z" />
+    
+    <!-- Wrist -->
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M190,245 A10,10 0 1,1 210,245 A10,10 0 1,1 190,245 Z" />
+    
+    <!-- Palm -->
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M150,180 L250,180 L250,250 L150,250 Z" />
+    
+    <!-- Fingers -->
+    <!-- Pinky -->
+    <path android:fillColor="#FFDBCB" android:pathData="M160,100 L180,100 L180,180 L160,180 Z" />
+    <!-- Ring finger -->
+    <path android:fillColor="#FFDBCB" android:pathData="M185,80 L205,80 L205,180 L185,180 Z" />
+    <!-- Middle finger -->
+    <path android:fillColor="#FFDBCB" android:pathData="M210,70 L230,70 L230,180 L210,180 Z" />
+    <!-- Index finger (active - being touched) -->
+    <path android:fillColor="#4CAF50" android:pathData="M235,80 L255,80 L255,180 L235,180 Z" />
+    
+    <!-- Fingertips (inactive ones dimmed) -->
+    <path android:fillColor="#CCCCCC" android:pathData="M165,100 A5,5 0 1,1 175,100 A5,5 0 1,1 165,100 Z" />
+    <path android:fillColor="#CCCCCC" android:pathData="M190,80 A5,5 0 1,1 200,80 A5,5 0 1,1 190,80 Z" />
+    <path android:fillColor="#CCCCCC" android:pathData="M215,70 A5,5 0 1,1 225,70 A5,5 0 1,1 215,70 Z" />
+    <!-- Index fingertip (active) -->
+    <path android:fillColor="#4CAF50" android:pathData="M240,80 A8,8 0 1,1 250,80 A8,8 0 1,1 240,80 Z" />
+    
+    <!-- Thumb (touching index finger) -->
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M200,120 L230,100 L240,120 L210,140 Z" />
+    
+    <!-- Thumb tip (touching) -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M225,105 A8,8 0 1,1 235,105 A8,8 0 1,1 225,105 Z" />
+    
+    <!-- Contact point highlight (connection) -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M240,85 A12,12 0 1,1 240,109 A12,12 0 1,1 240,85 Z" />
+    
+    <!-- Success indicator -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M280,90 L285,95 L295,85 L290,80 L285,85 L282,82 Z" />
+        
+</vector>

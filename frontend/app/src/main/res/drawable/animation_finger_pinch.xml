@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    
+    <!-- Finger Pinch Strengthening Animation - Thumb to Index Pinch -->
+    <!-- Fingers relaxed, thumb and index apart -->
+    <item android:drawable="@drawable/finger_open" android:duration="1000" />
+    <!-- Begin bringing thumb and index together -->
+    <item android:drawable="@drawable/finger_closing" android:duration="600" />
+    <!-- Pinch position (thumb touching index finger) -->
+    <item android:drawable="@drawable/finger_closed" android:duration="800" />
+    <!-- Hold pinch position -->
+    <item android:drawable="@drawable/finger_closed" android:duration="600" />
+    <!-- Begin releasing pinch -->
+    <item android:drawable="@drawable/finger_opening" android:duration="600" />
+    <!-- Back to relaxed position -->
+    <item android:drawable="@drawable/finger_open" android:duration="500" />
+    
+</animation-list>

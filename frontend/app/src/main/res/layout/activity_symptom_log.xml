@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:background="?attr/colorSurface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Symptom Log"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#299F9A"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Joint pain (VAS) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joint Pain (VAS Score 0–10)"
+            android:textStyle="bold"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="#000000"/>
+
+        <SeekBar
+            android:id="@+id/vasSeekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
+
+        <TextView
+            android:id="@+id/vasValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VAS: 0"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- No of joints involved -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Joints Involved"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/jointsInput"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_horizontal"
+            android:hint="Enter number"
+            android:inputType="number"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp" />
+
+        <!-- Morning stiffness -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Morning Stiffness Duration"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginBottom="16dp" />
+
+        <RadioGroup
+            android:id="@+id/stiffnessGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/less30min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Less than 30 min"
+                android:buttonTint="#299F9A"
+                android:layout_marginEnd="20dp"/>
+
+            <RadioButton
+                android:id="@+id/more30min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More than 30 min"
+                android:buttonTint="#299F9A"/>
+        </RadioGroup>
+
+        <!-- Fatigue -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fatigue Level (0–10 FACIT)"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginBottom="12dp"/>
+
+        <SeekBar
+            android:id="@+id/fatigueSeekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
+
+        <TextView
+            android:id="@+id/fatigueValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fatigue: 0"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Other symptoms -->
+        <EditText
+            android:id="@+id/otherSymptoms"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_horizontal"
+            android:hint="Other symptoms"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp" />
+
+        <!-- Notes -->
+        <EditText
+            android:id="@+id/notes"
+            android:layout_width="297dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="24dp"
+            android:background="@android:drawable/edit_text"
+            android:gravity="top|start"
+            android:hint="Notes"
+            android:paddingStart="20dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="12dp" />
+
+        <!-- Submit button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#E0F2F4"
+            android:minHeight="48dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="Submit Entry"
+            android:textColor="#000000"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="600dp"
+    android:height="400dp"
+    android:viewportWidth="600"
+    android:viewportHeight="400">
+    
+    <!-- Full Body Finger Extension - Open Hand Position -->
+    
+    <!-- Person's torso/chest -->
+    <path
+        android:fillColor="#E8B896"
+        android:pathData="M200,150 L400,150 L420,250 L180,250 Z" />
+    
+    <!-- Shoulder -->
+    <path
+        android:fillColor="#D4A574"
+        android:pathData="M180,150 A25,25 0 1,1 230,150 A25,25 0 1,1 180,150 Z" />
+    
+    <!-- Upper arm -->
+    <path
+        android:fillColor="#E8B896"
+        android:pathData="M180,175 L220,175 L240,220 L160,220 Z" />
+    
+    <!-- Elbow joint -->
+    <path
+        android:fillColor="#D4A574"
+        android:pathData="M190,215 A15,15 0 1,1 210,215 A15,15 0 1,1 190,215 Z" />
+    
+    <!-- Forearm -->
+    <path
+        android:fillColor="#E8B896"
+        android:pathData="M200,200 L450,200 L450,240 L200,240 Z" />
+    
+    <!-- Wrist joint -->
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M440,215 A12,12 0 1,1 440,225 A12,12 0 1,1 440,215 Z" />
+    
+    <!-- Palm (large and detailed) -->
+    <path
+        android:fillColor="#E8B896"
+        android:pathData="M450,160 L520,160 L520,280 L450,280 Z" />
+    
+    <!-- Fingers fully extended and spread wide -->
+    <!-- Pinky -->
+    <path android:fillColor="#E8B896" android:pathData="M440,120 L460,120 L460,160 L440,160 Z" />
+    <!-- Ring finger -->
+    <path android:fillColor="#E8B896" android:pathData="M470,100 L490,100 L490,160 L470,160 Z" />
+    <!-- Middle finger -->
+    <path android:fillColor="#E8B896" android:pathData="M500,90 L520,90 L520,160 L500,160 Z" />
+    <!-- Index finger -->
+    <path android:fillColor="#E8B896" android:pathData="M530,100 L550,100 L550,160 L530,160 Z" />
+    <!-- Extra finger spread -->
+    <path android:fillColor="#E8B896" android:pathData="M560,120 L580,120 L580,160 L560,160 Z" />
+    
+    <!-- Finger joints and knuckles -->
+    <path android:fillColor="#D4A574" android:pathData="M450,160 A6,6 0 1,1 450,172 A6,6 0 1,1 450,160 Z" />
+    <path android:fillColor="#D4A574" android:pathData="M480,160 A6,6 0 1,1 480,172 A6,6 0 1,1 480,160 Z" />
+    <path android:fillColor="#D4A574" android:pathData="M510,160 A6,6 0 1,1 510,172 A6,6 0 1,1 510,160 Z" />
+    <path android:fillColor="#D4A574" android:pathData="M540,160 A6,6 0 1,1 540,172 A6,6 0 1,1 540,160 Z" />
+    <path android:fillColor="#D4A574" android:pathData="M570,160 A6,6 0 1,1 570,172 A6,6 0 1,1 570,160 Z" />
+    
+    <!-- Thumb (extended away) -->
+    <path
+        android:fillColor="#E8B896"
+        android:pathData="M420,180 L450,165 L460,185 L430,200 Z" />
+    
+    <!-- Fingernails (realistic detail) -->
+    <path android:fillColor="#F8BBD9" android:pathData="M445,120 L455,120 L455,130 L445,130 Z" />
+    <path android:fillColor="#F8BBD9" android:pathData="M475,100 L485,100 L485,110 L475,110 Z" />
+    <path android:fillColor="#F8BBD9" android:pathData="M505,90 L515,90 L515,100 L505,100 Z" />
+    <path android:fillColor="#F8BBD9" android:pathData="M535,100 L545,100 L545,110 L535,110 Z" />
+    <path android:fillColor="#F8BBD9" android:pathData="M565,120 L575,120 L575,130 L565,130 Z" />
+    
+    <!-- Spread indicators -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M420,140 L410,150 L430,150 Z" />
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M590,140 L580,150 L600,150 Z" />
+        
+</vector>

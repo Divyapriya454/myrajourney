@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "data": [
+    {"slug":"what-is-ra","title":"What is Rheumatoid Arthritis?","category":"WHAT_IS_RA","cover_image_url":null,"published_at":"2025-11-04 09:50:26","updated_at":"2025-11-04 09:50:26"},
+    {"slug":"nutrition-tips","title":"Nutrition for RA Patients","category":"NUTRITION","cover_image_url":null,"published_at":"2025-11-04 09:50:31","updated_at":"2025-11-04 09:50:31"},
+    {"slug":"managing-symptoms","title":"Managing Your Symptoms","category":"MANAGEMENT","cover_image_url":null,"published_at":"2025-11-04 09:50:31","updated_at":"2025-11-04 09:50:31"}
+  ],
+  "meta": {"total": 3, "page": 1, "limit": 20}
+}
+

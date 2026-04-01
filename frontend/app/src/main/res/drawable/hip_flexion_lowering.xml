@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Hip Flexion Lowering Position - Leg Coming Down -->
+    <!-- Body/Torso -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M40,20 L80,20 L80,60 L40,60 Z" />
+    
+    <!-- Leg in lowering position (45 degrees down) -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M60,60 L75,75 L80,70 L65,55 Z" />
+    
+    <!-- Hip joint indicator (circle as path) -->
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M60,57 A3,3 0 1,1 60,63 A3,3 0 1,1 60,57 Z" />
+    
+    <!-- Downward motion lines -->
+    <path
+        android:pathData="M70,80 L75,85 L80,80" 
+        android:strokeWidth="2"
+        android:strokeColor="#FFC107" />
+        
+</vector>

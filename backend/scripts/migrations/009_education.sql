@@ -1,0 +1,30 @@
+CREATE TABLE IF NOT EXISTS education_articles (
+	id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	slug VARCHAR(160) NOT NULL UNIQUE,
+	title VARCHAR(160) NOT NULL,
+	category ENUM('WHAT_IS_RA','MANAGEMENT','NUTRITION','LIFESTYLE') NOT NULL,
+	content_html MEDIUMTEXT NOT NULL,
+	cover_image_url VARCHAR(255) NULL,
+	published_at DATETIME NULL,
+	updated_at DATETIME NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

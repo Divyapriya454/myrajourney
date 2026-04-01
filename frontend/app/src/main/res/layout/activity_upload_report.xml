@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Report Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Report Name"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reportName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Report Date -->
+        <TextView
+            android:id="@+id/reportDate"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@drawable/bg_edit_text"
+            android:text="Select Upload Date &amp; Time"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical|start"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Upload Area -->
+        <LinearLayout
+            android:id="@+id/uploadArea"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_edit_text"
+            android:gravity="center"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_cloud_upload"
+                android:contentDescription="Upload Icon"
+                android:tint="@android:color/darker_gray"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/uploadText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drag &amp; Drop file here or tap to select"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Submit Report"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,80 @@
+﻿{
+    "users": [
+        {
+            "id": 1,
+            "name": "Deepan Kumar",
+            "email": "deepankumar@gmail.com",
+            "role": "PATIENT"
+        },
+        {
+            "id": 7,
+            "name": "Divya",
+            "email": "divya@gmail.com",
+            "role": "PATIENT"
+        },
+        {
+            "id": 8,
+            "name": "Avinash",
+            "email": "avinash@gmail.com",
+            "role": "DOCTOR"
+        }
+    ],
+    "patients_table": [
+        {
+            "id": 1,
+            "user_id": 1,
+            "medical_history": "Rheumatoid Arthritis diagnosed in 2020",
+            "allergies": null,
+            "current_medications": null,
+            "emergency_contact": null,
+            "blood_group": "O+",
+            "height": null,
+            "weight": null,
+            "created_at": "2026-03-05 19:23:57",
+            "updated_at": "2026-03-05 20:21:13",
+            "medical_record_number": null,
+            "emergency_phone": null,
+            "age": null,
+            "assigned_doctor_id": 8,
+            "diagnosis": null,
+            "medical_id": null,
+            "gender": null,
+            "address": null,
+            "profile_picture": null,
+            "profile_image_url": null
+        },
+        {
+            "id": 2,
+            "user_id": 7,
+            "medical_history": null,
+            "allergies": null,
+            "current_medications": null,
+            "emergency_contact": null,
+            "blood_group": null,
+            "height": null,
+            "weight": null,
+            "created_at": "2026-03-05 20:20:20",
+            "updated_at": "2026-03-05 20:21:11",
+            "medical_record_number": null,
+            "emergency_phone": null,
+            "age": 25,
+            "assigned_doctor_id": 8,
+            "diagnosis": null,
+            "medical_id": null,
+            "gender": "FEMALE",
+            "address": "chennai",
+            "profile_picture": null,
+            "profile_image_url": null
+        }
+    ],
+    "rehab_counts_by_patient": [
+        {
+            "patient_id": 1,
+            "count": 42
+        },
+        {
+            "patient_id": 7,
+            "count": 4
+        }
+    ]
+}

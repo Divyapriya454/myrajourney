@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="300dp"
+    android:viewportWidth="200"
+    android:viewportHeight="300">
+    
+    <!-- Hip Flexion Raised Position - Knee at Chest -->
+    
+    <!-- Head -->
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M90,20 A10,10 0 1,1 110,20 A10,10 0 1,1 90,20 Z" />
+    
+    <!-- Torso -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M85,40 L115,40 L120,120 L80,120 Z" />
+    
+    <!-- Arms -->
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M75,50 L85,50 L85,100 L75,100 Z" />
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M115,50 L125,50 L125,100 L115,100 Z" />
+    
+    <!-- Left leg (stationary) -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M85,120 L95,120 L95,220 L85,220 Z" />
+    
+    <!-- Right leg - Upper thigh (raised high) -->
+    <path
+        android:fillColor="#1976D2"
+        android:pathData="M105,120 L115,120 L130,80 L120,80 Z" />
+    
+    <!-- Right leg - Lower leg (bent up) -->
+    <path
+        android:fillColor="#1976D2"
+        android:pathData="M120,80 L130,80 L140,120 L130,120 Z" />
+    
+    <!-- Feet -->
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M80,220 L100,220 L100,230 L80,230 Z" />
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M130,120 L150,120 L150,130 L130,130 Z" />
+    
+    <!-- Hip joint indicators -->
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M90,117 A3,3 0 1,1 90,123 A3,3 0 1,1 90,117 Z" />
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M110,117 A3,3 0 1,1 110,123 A3,3 0 1,1 110,117 Z" />
+    
+    <!-- Hold indicator -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M145,100 A5,5 0 1,1 145,110 A5,5 0 1,1 145,100 Z" />
+    
+
+        
+</vector>

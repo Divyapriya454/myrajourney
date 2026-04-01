@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "data": {
+    "token": "offline-mock-token",
+    "user": {
+      "id": 7,
+      "email": "divyapriyaa0454.sse@saveetha.com",
+      "role": "PATIENT"
+    }
+  }
+}
+

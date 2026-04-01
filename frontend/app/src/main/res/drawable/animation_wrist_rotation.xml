@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    
+    <!-- Wrist Rotation Animation - Smooth Circular Motion -->
+    <!-- Starting position (12 o'clock) -->
+    <item android:drawable="@drawable/wrist_rotate_1" android:duration="750" />
+    <!-- 3 o'clock position -->
+    <item android:drawable="@drawable/wrist_rotate_2" android:duration="750" />
+    <!-- 6 o'clock position -->
+    <item android:drawable="@drawable/wrist_rotate_3" android:duration="750" />
+    <!-- 9 o'clock position -->
+    <item android:drawable="@drawable/wrist_rotate_4" android:duration="750" />
+    <!-- Back to starting position for smooth loop -->
+    <item android:drawable="@drawable/wrist_rotate_1" android:duration="750" />
+    
+</animation-list>

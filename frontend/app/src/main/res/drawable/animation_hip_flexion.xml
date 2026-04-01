@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    
+    <!-- Hip Flexion Animation - Lifting Knee Toward Chest -->
+    <!-- Starting position (leg down) -->
+    <item android:drawable="@drawable/hip_flexion_start" android:duration="1000" />
+    <!-- Begin lifting leg -->
+    <item android:drawable="@drawable/hip_flexion_lifting" android:duration="700" />
+    <!-- Continue lifting -->
+    <item android:drawable="@drawable/hip_flexion_lifting" android:duration="500" />
+    <!-- Leg fully raised (knee toward chest) -->
+    <item android:drawable="@drawable/hip_flexion_raised" android:duration="1200" />
+    <!-- Begin lowering leg -->
+    <item android:drawable="@drawable/hip_flexion_lowering" android:duration="700" />
+    <!-- Continue lowering -->
+    <item android:drawable="@drawable/hip_flexion_lowering" android:duration="500" />
+    <!-- Back to starting position -->
+    <item android:drawable="@drawable/hip_flexion_start" android:duration="500" />
+    
+</animation-list>

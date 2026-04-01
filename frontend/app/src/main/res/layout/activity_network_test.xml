@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Network Connectivity Test"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btn_test_connection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test Basic Connection"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_test_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test Login"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_test_medication_assign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test Medication Assignment"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready to test..."
+            android:textSize="12sp"
+            android:fontFamily="monospace"
+            android:background="#f5f5f5"
+            android:padding="8dp" />
+
+    </ScrollView>
+
+</LinearLayout>

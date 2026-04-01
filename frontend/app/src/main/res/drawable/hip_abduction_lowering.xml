@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Hip Abduction Lowering Position - Leg Coming Back -->
+    <!-- Body/Torso -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M40,20 L80,20 L80,60 L40,60 Z" />
+    
+    <!-- Left leg (stationary) -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M50,60 L55,60 L55,100 L50,100 Z" />
+    
+    <!-- Right leg (lowering back at 20 degrees) -->
+    <path
+        android:fillColor="#1976D2"
+        android:pathData="M67.5,60 L72,72 L77,67 L72.5,55 Z" />
+    
+    <!-- Hip joints (circles as paths) -->
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M52.5,58 A2,2 0 1,1 52.5,62 A2,2 0 1,1 52.5,58 Z" />
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M67.5,58 A2,2 0 1,1 67.5,62 A2,2 0 1,1 67.5,58 Z" />
+    
+    <!-- Inward motion lines -->
+    <path
+        android:pathData="M72,75 L70,80 L68,75" 
+        android:strokeWidth="2"
+        android:strokeColor="#FFC107" />
+        
+</vector>

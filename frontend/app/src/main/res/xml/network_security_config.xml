@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Allow cleartext traffic for localhost, emulator, and local network IPs -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+        <domain includeSubdomains="true">10.16.20.165</domain>
+        <domain includeSubdomains="true">10.187.192.165</domain>
+        <domain includeSubdomains="true">10.33.11.165</domain>
+        <domain includeSubdomains="true">172.25.110.80</domain>
+        <domain includeSubdomains="true">10.150.181.194</domain>
+        <domain includeSubdomains="true">172.25.48.191</domain>
+        <domain includeSubdomains="true">172.25.0.0</domain>
+        <domain includeSubdomains="true">10.0.0.0</domain>
+        <domain includeSubdomains="true">192.168.0.0</domain>
+    </domain-config>
+    
+    <!-- Allow all local network IPs (192.168.x.x, 10.x.x.x, 172.x.x.x) -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

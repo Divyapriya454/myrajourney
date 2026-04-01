@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Hip Abduction Raised Position - Leg Fully Abducted -->
+    <!-- Body/Torso -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M40,20 L80,20 L80,60 L40,60 Z" />
+    
+    <!-- Left leg (stationary) -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M50,60 L55,60 L55,100 L50,100 Z" />
+    
+    <!-- Right leg (fully abducted at 45 degrees) -->
+    <path
+        android:fillColor="#1976D2"
+        android:pathData="M67.5,60 L85,78 L90,73 L72.5,55 Z" />
+    
+    <!-- Hip joints (circles as paths) -->
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M52.5,58 A2,2 0 1,1 52.5,62 A2,2 0 1,1 52.5,58 Z" />
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M67.5,58 A2,2 0 1,1 67.5,62 A2,2 0 1,1 67.5,58 Z" />
+    
+    <!-- Hold indicator (circle as path) -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M85,83 A2,2 0 1,1 85,87 A2,2 0 1,1 85,83 Z" />
+        
+</vector>

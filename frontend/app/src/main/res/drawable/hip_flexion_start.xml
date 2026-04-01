@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="600dp"
+    android:height="500dp"
+    android:viewportWidth="600"
+    android:viewportHeight="500">
+    
+    <!-- Full Body Hip Flexion - Starting Position (Complete Person) -->
+    
+    <!-- Head -->
+    <path
+        android:fillColor="#E8B896"
+        android:pathData="M280,50 A30,30 0 1,1 320,50 A30,30 0 1,1 280,50 Z" />
+    
+    <!-- Neck -->
+    <path
+        android:fillColor="#E8B896"
+        android:pathData="M290,80 L310,80 L310,100 L290,100 Z" />
+    
+    <!-- Torso/Chest (realistic proportions) -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M250,100 L350,100 L360,200 L240,200 Z" />
+    
+    <!-- Arms (both sides) -->
+    <!-- Left arm -->
+    <path
+        android:fillColor="#E8B896"
+        android:pathData="M220,120 L250,120 L250,180 L220,180 Z" />
+    <!-- Right arm -->
+    <path
+        android:fillColor="#E8B896"
+        android:pathData="M350,120 L380,120 L380,180 L350,180 Z" />
+    
+    <!-- Hands -->
+    <path
+        android:fillColor="#E8B896"
+        android:pathData="M210,170 L230,170 L230,190 L210,190 Z" />
+    <path
+        android:fillColor="#E8B896"
+        android:pathData="M370,170 L390,170 L390,190 L370,190 Z" />
+    
+    <!-- Waist/Hip area -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M260,200 L340,200 L340,230 L260,230 Z" />
+    
+    <!-- Left leg (stationary) -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M260,230 L290,230 L290,400 L260,400 Z" />
+    
+    <!-- Right leg (will move - starting position) -->
+    <path
+        android:fillColor="#1976D2"
+        android:pathData="M310,230 L340,230 L340,400 L310,400 Z" />
+    
+    <!-- Feet -->
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M250,400 L300,400 L300,420 L250,420 Z" />
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M300,400 L350,400 L350,420 L300,420 Z" />
+    
+    <!-- Hip joint indicators -->
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M270,225 A8,8 0 1,1 270,235 A8,8 0 1,1 270,225 Z" />
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M330,225 A8,8 0 1,1 330,235 A8,8 0 1,1 330,235 Z" />
+    
+    <!-- Knee joints -->
+    <path
+        android:fillColor="#D4A574"
+        android:pathData="M270,315 A6,6 0 1,1 270,325 A6,6 0 1,1 270,315 Z" />
+    <path
+        android:fillColor="#D4A574"
+        android:pathData="M330,315 A6,6 0 1,1 330,325 A6,6 0 1,1 330,315 Z" />
+    
+    <!-- Movement arrow (showing upward knee movement) -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M380,280 L385,270 L390,280 L385,250 L375,270 Z" />
+    
+    <!-- Exercise instruction area -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M50,20 L550,20 L550,70 L50,70 Z"
+        android:fillAlpha="0.1" />
+        
+</vector>

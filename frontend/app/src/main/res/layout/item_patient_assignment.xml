@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="?attr/colorSurface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Patient Info -->
+        <TextView
+            android:id="@+id/patientName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Patient Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnSurface"/>
+
+        <TextView
+            android:id="@+id/patientEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="patient@email.com"
+            android:textSize="14sp"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/currentDoctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Not assigned"
+            android:textSize="14sp"
+            android:textColor="?attr/colorSecondary"
+            android:layout_marginTop="8dp"
+            android:textStyle="italic"/>
+
+        <!-- Doctor Selection -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Assign to Doctor:"
+            android:textSize="14sp"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/doctorSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp"
+            android:background="@drawable/spinner_background"/>
+
+        <!-- Assign Button -->
+        <Button
+            android:id="@+id/assignButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Assign"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_button_primary"
+            android:layout_marginTop="12dp"
+            android:enabled="false"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

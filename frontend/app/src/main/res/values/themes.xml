@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.Myrajouney" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- PRIMARY COLORS -->
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- SECONDARY COLORS -->
+        <item name="colorSecondary">@color/accent_color</item>
+        <item name="colorSecondaryVariant">@color/accent_color</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- BACKGROUND + SURFACE -->
+        <item name="colorBackground">@color/background_light</item>
+        <item name="android:windowBackground">@color/background_light</item>
+
+        <item name="colorSurface">@color/background_card</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+
+        <!-- SYSTEM UI -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <!-- Layout handling - Fixed for proper status bar spacing -->
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+
+    <style name="Theme.Myrajouney.NoActionBar" parent="Theme.Myrajouney">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.Myrajouney.FullScreen" parent="Theme.Myrajouney.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- OPTIONAL CUSTOM DARK THEME -->
+    <style name="Theme.Myrajouney.Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/neon_blue</item>
+        <item name="colorPrimaryVariant">@color/neon_purple</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/neon_cyan</item>
+        <item name="colorSecondaryVariant">@color/neon_pink</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="colorBackground">@color/dark_background</item>
+        <item name="android:windowBackground">@color/dark_background</item>
+
+        <item name="colorSurface">@color/dark_surface</item>
+        <item name="colorOnSurface">@color/dark_text_primary</item>
+
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+
+</resources>

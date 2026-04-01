@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="350dp"
+    android:viewportWidth="400"
+    android:viewportHeight="350">
+    
+    <!-- Fingers Opening from Fist - Large and Clear -->
+    
+    <!-- Forearm -->
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M150,250 L250,250 L250,300 L150,300 Z" />
+    
+    <!-- Wrist -->
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M190,245 A10,10 0 1,1 210,245 A10,10 0 1,1 190,245 Z" />
+    
+    <!-- Palm -->
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M150,180 L250,180 L250,250 L150,250 Z" />
+    
+    <!-- Fingers opening (straightening) -->
+    <!-- Pinky (straightening) -->
+    <path android:fillColor="#FFDBCB" android:pathData="M160,130 L180,130 L180,180 L160,180 Z" />
+    <!-- Ring finger (straightening) -->
+    <path android:fillColor="#FFDBCB" android:pathData="M185,120 L205,120 L205,180 L185,180 Z" />
+    <!-- Middle finger (straightening) -->
+    <path android:fillColor="#FFDBCB" android:pathData="M210,110 L230,110 L230,180 L210,180 Z" />
+    <!-- Index finger (straightening) -->
+    <path android:fillColor="#FFDBCB" android:pathData="M235,120 L255,120 L255,180 L235,180 Z" />
+    
+    <!-- Finger joints (straightening) -->
+    <path android:fillColor="#E6C2A6" android:pathData="M170,150 A5,5 0 1,1 170,160 A5,5 0 1,1 170,150 Z" />
+    <path android:fillColor="#E6C2A6" android:pathData="M195,140 A5,5 0 1,1 195,150 A5,5 0 1,1 195,140 Z" />
+    <path android:fillColor="#E6C2A6" android:pathData="M220,130 A5,5 0 1,1 220,140 A5,5 0 1,1 220,130 Z" />
+    <path android:fillColor="#E6C2A6" android:pathData="M245,140 A5,5 0 1,1 245,150 A5,5 0 1,1 245,140 Z" />
+    
+    <!-- Thumb (moving away from fingers) -->
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M120,190 L150,180 L155,200 L125,210 Z" />
+    
+    <!-- Movement arrows showing opening direction -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M170,110 L175,100 L165,100 Z" />
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M195,100 L200,90 L190,90 Z" />
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M220,90 L225,80 L215,80 Z" />
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M245,100 L250,90 L240,90 Z" />
+        
+</vector>

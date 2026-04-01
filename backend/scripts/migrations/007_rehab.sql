@@ -1,0 +1,40 @@
+CREATE TABLE IF NOT EXISTS rehab_plans (
+	id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	patient_id INT UNSIGNED NOT NULL,
+	title VARCHAR(160) NOT NULL,
+	description TEXT NULL,
+	created_at DATETIME NOT NULL,
+	updated_at DATETIME NOT NULL,
+	CONSTRAINT fk_rehab_patient FOREIGN KEY (patient_id) REFERENCES users(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS rehab_exercises (
+	id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	rehab_plan_id INT UNSIGNED NOT NULL,
+	name VARCHAR(160) NOT NULL,
+	description TEXT NULL,
+	reps VARCHAR(50) NULL,
+	sets SMALLINT UNSIGNED NULL,
+	frequency_per_week VARCHAR(50) NULL,
+	CONSTRAINT fk_rehab_ex_plan FOREIGN KEY (rehab_plan_id) REFERENCES rehab_plans(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

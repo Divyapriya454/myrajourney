@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingVertical="8dp"
+    android:weightSum="10">
+
+    <!-- Bullet Point -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:text="✓"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <!-- Medication Name (Takes most space) -->
+    <TextView
+        android:id="@+id/prescriptionMedName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="9.2"
+        android:text="Medication Name 500mg"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:lineSpacingExtra="4dp"
+        android:textStyle="normal" />
+
+</LinearLayout>

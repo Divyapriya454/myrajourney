@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" />
+    
+    <!-- Camera permissions for exercise tracking -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.front" android:required="false" />
+
+    <application
+        android:name=".common.app.MyApplication"
+        android:label="@string/app_name"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:extractNativeLibs="false"
+        android:theme="@style/Theme.Myrajouney"
+        android:networkSecurityConfig="@xml/network_security_config">
+
+        <!-- SPLASH / AUTH -->
+        <activity
+            android:name=".auth.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Myrajouney.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".auth.OnboardingActivity"
+            android:theme="@style/Theme.Myrajouney.FullScreen"
+            android:exported="false" />
+
+        <activity
+            android:name=".auth.LoginActivity"
+            android:theme="@style/Theme.Myrajouney.FullScreen"
+            android:exported="true"
+            android:importantForAutofill="yes" />
+
+        <activity
+            android:name=".auth.ForgotPasswordActivity"
+            android:exported="false" />
+
+        <!-- ? ADDED: Required for new password reset flow -->
+        <activity
+            android:name=".admin.users.ResetPasswordActivity"
+            android:exported="false" />
+
+
+        <!-- ORIGINAL DASHBOARDS -->
+        <activity android:name=".patient.dashboard.PatientDashboardActivity" android:exported="false" />
+        <activity android:name=".doctor.dashboard.DoctorDashboardActivity" android:exported="false" />
+        <activity android:name=".admin.dashboard.AdminDashboardActivity" android:exported="false" />
+
+
+        <!-- ADMIN -->
+        <activity android:name=".admin.management.AdminManagementActivity" android:exported="false" />
+        <activity android:name=".admin.management.EditUserActivity" android:exported="false" />
+        <activity android:name=".admin.management.UserDetailsActivity" android:exported="false" />
+        <activity android:name=".admin.management.SystemSettingsActivity" android:exported="false" />
+        <activity android:name=".admin.users.CreatePatientActivity" android:exported="false" />
+        <activity android:name=".admin.users.CreateDoctorActivity" android:exported="false" />
+        <activity android:name=".admin.users.EditPatientActivity" android:exported="false" />
+        <activity android:name=".admin.users.EditDoctorActivity" android:exported="false" />
+        <activity android:name=".admin.users.UserManagementActivity" android:exported="false" />
+        <activity android:name=".admin.dashboard.SettingsActivity" android:exported="false" />
+        <activity android:name=".admin.logs.AllNotificationsActivity" android:exported="false" />
+        <activity android:name=".admin.meds.AllMedicationsActivity" android:exported="false" />
+        <activity android:name=".admin.meds.ClearMedicationsActivity" android:exported="false" />
+        <activity android:name=".admin.assignments.AssignPatientToDoctorActivity" android:exported="false" />
+
+
+        <!-- DOCTOR � APPOINTMENTS & PATIENTS -->
+        <activity android:name=".doctor.patients.AllPatientsActivity" android:exported="false" />
+        <activity android:name=".doctor.patients.PatientDetailsActivity" android:exported="false" />
+
+        <activity android:name=".doctor.appointments.DoctorScheduleActivity" android:exported="true" />
+
+        <activity
+            android:name=".doctor.appointments.AppointmentDetailsActivity"
+            android:parentActivityName=".doctor.appointments.DoctorScheduleActivity"
+            android:exported="true" />
+
+        <activity android:name=".doctor.dashboard.HealthStatsActivity" android:exported="false" />
+        <activity android:name=".doctor.reports.DoctorReportsActivity" android:exported="false" />
+        <activity android:name=".doctor.meds.DoctorAssignMedicationActivity" android:exported="false" />
+
+
+        <!-- REHAB -->
+        <activity android:name=".common.rehab.AddRehabActivity" android:exported="false" />
+        <activity android:name=".patient.rehab.PatientRehabilitationActivity" android:exported="false" />
+        <activity android:name=".patient.rehab.LocalVideoPlayerActivity" android:exported="false"
+                  android:screenOrientation="portrait" />
+        
+        <!-- LIVE TRACKING WITH REFERENCE VIDEO ANALYSIS - DISABLED -->
+        <!--
+        <activity 
+            android:name=".exercise.ui.LiveTrackingActivity" 
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Myrajouney.FullScreen" />
+        -->
+
+        <!-- TEST LOCAL VIDEO -->
+        <activity 
+            android:name=".patient.rehab.TestLocalVideoActivity" 
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <!-- TEST LIVE TRACKING - DISABLED -->
+        <!--
+        <activity 
+            android:name=".exercise.ui.TestLiveTrackingActivity" 
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        -->
+
+
+        <!-- PATIENT APPOINTMENTS -->
+        <activity android:name=".patient.appointments.PatientAppointmentsActivity" android:exported="true" />
+
+        <activity android:name=".patient.symptoms.SymptomLogActivity" android:exported="false" />
+        <activity android:name=".patient.reports.UploadReportActivity" android:exported="false" />
+        <activity android:name=".patient.reports.ReportList" android:exported="false" />
+
+        <!-- Report Details -->
+        <activity
+            android:name=".patient.reports.ReportDetailsActivity"
+            android:exported="false" />
+
+        <activity android:name=".patient.rehab.PatientRehabilitationActivity" android:exported="false" />
+        <activity android:name=".patient.medications.PatientMedicationsActivity" android:exported="false" />
+        <activity android:name=".patient.education.EducationHubActivity" android:exported="false" />
+        <activity android:name=".patient.education.ArticleViewerActivity" android:exported="false" />
+
+
+        <!-- SHARED - ADD APPOINTMENT -->
+        <activity
+            android:name=".common.appointments.AddAppointmentActivity"
+            android:exported="true"
+            android:parentActivityName=".doctor.dashboard.DoctorDashboardActivity" />
+
+        <!-- UI ACTIVITIES -->
+        <activity
+            android:name=".ui.PrivacyPolicyActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.PrivacyPolicyTestActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.TestPrivacyActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.ProfileEditActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.AccountManagementActivity"
+            android:exported="false" />
+
+        <!-- AI ACTIVITIES -->
+        <activity
+            android:name=".ai.ExtractedDataActivity"
+            android:exported="false" />
+
+
+        <!-- MEDICATION NOTIFICATION SERVICE -->
+        <service
+            android:name=".patient.medications.service.MedicationNotificationService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <!-- MEDICATION REMINDER RECEIVERS -->
+        <receiver
+            android:name=".patient.medications.MedicationReminderReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".patient.medications.MarkMedicationTakenReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".patient.medications.notification.NotificationActionReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name=".patient.medications.service.BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

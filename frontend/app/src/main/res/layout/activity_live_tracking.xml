@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <!-- Top Status Bar -->
+    <LinearLayout
+        android:id="@+id/top_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#80000000"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Exercise Name -->
+        <TextView
+            android:id="@+id/exercise_name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Live Exercise Tracking"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- Processing Status -->
+        <TextView
+            android:id="@+id/processing_status_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Initializing..."
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:gravity="center" />
+
+        <!-- Processing Progress -->
+        <ProgressBar
+            android:id="@+id/processing_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="8dp"
+            android:max="100"
+            android:progress="0"
+            android:progressTint="#4CAF50" />
+
+    </LinearLayout>
+
+    <!-- Main Content Area -->
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_status_bar"
+        android:layout_above="@id/bottom_controls"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <!-- Reference Video Section -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:layout_margin="4dp">
+
+            <!-- Reference Video -->
+            <androidx.media3.ui.PlayerView
+                android:id="@+id/reference_video_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:use_controller="false"
+                app:resize_mode="fit"
+                app:show_buffering="when_playing" />
+
+            <!-- Reference Video Overlay -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#80000000"
+                android:text="Reference Video"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="8dp" />
+
+        </FrameLayout>
+
+        <!-- Live Camera Section -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.3"
+            android:layout_margin="4dp">
+
+            <!-- Live Camera Preview -->
+            <androidx.camera.view.PreviewView
+                android:id="@+id/live_preview_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- Feedback Overlay -->
+            <com.example.myrajourney.exercise.ui.FeedbackOverlayView
+                android:id="@+id/feedback_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- Live Camera Overlay -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#80000000"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Live Camera"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+                <!-- Live Score -->
+                <TextView
+                    android:id="@+id/live_score_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Score: 0%"
+                    android:textColor="#4CAF50"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- Feedback Section -->
+    <LinearLayout
+        android:id="@+id/feedback_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/timer_section"
+        android:background="#80000000"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Feedback Text -->
+        <TextView
+            android:id="@+id/feedback_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready to start live tracking"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- Timer and Progress Section -->
+    <LinearLayout
+        android:id="@+id/timer_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_controls"
+        android:background="#80000000"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <!-- Timer -->
+        <TextView
+            android:id="@+id/timer_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="00:00"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="start|center_vertical" />
+
+        <!-- Exercise Progress -->
+        <ProgressBar
+            android:id="@+id/exercise_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="16dp"
+            android:max="100"
+            android:progress="0"
+            android:progressTint="#4CAF50" />
+
+        <!-- Progress Percentage -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0%"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:gravity="end|center_vertical" />
+
+    </LinearLayout>
+
+    <!-- Bottom Control Panel -->
+    <LinearLayout
+        android:id="@+id/bottom_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#80000000"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <!-- Start Tracking Button -->
+        <Button
+            android:id="@+id/start_tracking_button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_rounded_primary"
+            android:text="Start Live Tracking"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:enabled="false" />
+
+        <!-- Pause/Resume Button -->
+        <Button
+            android:id="@+id/pause_resume_button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/button_rounded"
+            android:text="Pause"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:enabled="false" />
+
+        <!-- Stop Button -->
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/button_rounded"
+            android:backgroundTint="#F44336"
+            android:text="Stop"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:enabled="false" />
+
+    </LinearLayout>
+
+    <!-- Loading Overlay (initially hidden) -->
+    <FrameLayout
+        android:id="@+id/loading_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:background="@drawable/rounded_background">
+
+            <ProgressBar
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Processing reference video..."
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

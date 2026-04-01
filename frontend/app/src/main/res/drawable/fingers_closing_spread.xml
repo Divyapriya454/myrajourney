@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Fingers closing from spread -->
+    <group android:name="hand">
+        <!-- Palm -->
+        <path
+            android:fillColor="#FFCC02"
+            android:pathData="M85,120 L115,120 L115,170 L85,170 Z" />
+        
+        <!-- Fingers closing -->
+        <path android:fillColor="#FFCC02" android:pathData="M82,63 L90,63 L90,120 L82,120 Z" />
+        <path android:fillColor="#FFCC02" android:pathData="M90,53 L96,53 L96,120 L90,120 Z" />
+        <path android:fillColor="#FFCC02" android:pathData="M96,53 L104,53 L104,120 L96,120 Z" />
+        <path android:fillColor="#FFCC02" android:pathData="M104,53 L112,53 L112,120 L104,120 Z" />
+        <path android:fillColor="#FFCC02" android:pathData="M112,63 L120,63 L120,120 L112,120 Z" />
+        
+        <!-- Thumb -->
+        <path
+            android:fillColor="#FFCC02"
+            android:pathData="M72,131 L82,119 L87,129 L77,141 Z" />
+    </group>
+    
+
+        
+</vector>

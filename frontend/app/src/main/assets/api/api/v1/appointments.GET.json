@@ -1,0 +1,8 @@
+{
+  "success": true,
+  "data": [
+    {"id":"1","patient_id":"7","doctor_id":"2","title":"Consultation","start_time":"2025-12-15T10:30:00Z","end_time":"2025-12-15T11:00:00Z","status":"SCHEDULED"}
+  ],
+  "meta": {"total": 1, "page": 1, "limit": 20}
+}
+

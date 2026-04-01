@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- DARK MODE THEME -->
+    <style name="Theme.Myrajouney" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- PRIMARY COLORS -->
+        <item name="colorPrimary">@color/neon_blue</item>
+        <item name="colorPrimaryVariant">@color/neon_purple</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- SECONDARY COLORS -->
+        <item name="colorSecondary">@color/neon_cyan</item>
+        <item name="colorSecondaryVariant">@color/neon_pink</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- BACKGROUND + SURFACES -->
+        <item name="colorBackground">@color/dark_background</item>
+        <item name="android:windowBackground">@color/dark_background</item>
+
+        <item name="colorSurface">@color/dark_surface</item>
+        <item name="colorOnSurface">@color/dark_text_primary</item>
+
+        <!-- TEXT COLORS -->
+        <item name="android:textColorPrimary">@color/dark_text_primary</item>
+        <item name="android:textColorSecondary">@color/dark_text_secondary</item>
+
+        <!-- SYSTEM UI -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:fitsSystemWindows">false</item>
+
+    </style>
+
+    <!-- NO ACTION BAR -->
+    <style name="Theme.Myrajouney.NoActionBar" parent="Theme.Myrajouney">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- FULL SCREEN -->
+    <style name="Theme.Myrajouney.FullScreen" parent="Theme.Myrajouney.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

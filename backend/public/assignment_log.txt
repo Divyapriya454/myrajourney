@@ -1,0 +1,153 @@
+[2026-02-25 08:25:39] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":13,"patient_id":1}
+Patient ID: 1, Doctor ID: 13
+UPDATE executed, rows affected: 1
+Verification: assigned_doctor_id = 13
+
+[2026-03-01 17:01:03] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":19,"patient_id":18}
+Patient ID: 18, Doctor ID: 19
+ERROR: Patient entry not found in patients table, creating...
+[2026-03-01 17:01:04] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":19,"patient_id":18}
+Patient ID: 18, Doctor ID: 19
+ERROR: Patient entry not found in patients table, creating...
+[2026-03-01 17:01:04] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":19,"patient_id":18}
+Patient ID: 18, Doctor ID: 19
+ERROR: Patient entry not found in patients table, creating...
+[2026-03-01 17:01:05] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":19,"patient_id":18}
+Patient ID: 18, Doctor ID: 19
+ERROR: Patient entry not found in patients table, creating...
+[2026-03-01 17:01:06] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":19,"patient_id":18}
+Patient ID: 18, Doctor ID: 19
+ERROR: Patient entry not found in patients table, creating...
+[2026-03-01 17:01:07] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":19,"patient_id":18}
+Patient ID: 18, Doctor ID: 19
+ERROR: Patient entry not found in patients table, creating...
+[2026-03-01 17:01:11] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":19,"patient_id":18}
+Patient ID: 18, Doctor ID: 19
+ERROR: Patient entry not found in patients table, creating...
+[2026-03-01 17:01:12] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":19,"patient_id":18}
+Patient ID: 18, Doctor ID: 19
+ERROR: Patient entry not found in patients table, creating...
+[2026-03-01 17:01:13] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":19,"patient_id":18}
+Patient ID: 18, Doctor ID: 19
+ERROR: Patient entry not found in patients table, creating...
+[2026-03-01 17:01:14] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":19,"patient_id":18}
+Patient ID: 18, Doctor ID: 19
+ERROR: Patient entry not found in patients table, creating...
+[2026-03-01 17:01:14] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":19,"patient_id":18}
+Patient ID: 18, Doctor ID: 19
+ERROR: Patient entry not found in patients table, creating...
+[2026-03-01 17:01:16] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":19,"patient_id":18}
+Patient ID: 18, Doctor ID: 19
+ERROR: Patient entry not found in patients table, creating...
+[2026-03-02 14:34:24] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":23,"patient_id":22}
+Patient ID: 22, Doctor ID: 23
+ERROR: Patient entry not found in patients table, creating...
+[2026-03-02 14:34:25] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":23,"patient_id":22}
+Patient ID: 22, Doctor ID: 23
+ERROR: Patient entry not found in patients table, creating...
+[2026-03-02 14:34:27] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":23,"patient_id":22}
+Patient ID: 22, Doctor ID: 23
+ERROR: Patient entry not found in patients table, creating...
+[2026-03-02 15:14:14] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":23,"patient_id":24}
+Patient ID: 24, Doctor ID: 23
+ERROR: Patient entry not found in patients table, creating...
+[2026-03-02 15:14:15] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":23,"patient_id":24}
+Patient ID: 24, Doctor ID: 23
+ERROR: Patient entry not found in patients table, creating...
+[2026-03-02 15:14:17] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":23,"patient_id":24}
+Patient ID: 24, Doctor ID: 23
+ERROR: Patient entry not found in patients table, creating...
+[2026-03-02 15:23:17] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":23,"patient_id":24}
+Patient ID: 24, Doctor ID: 23
+UPDATE executed, rows affected: 1
+Verification: assigned_doctor_id = 23
+
+[2026-03-02 15:23:25] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":23,"patient_id":24}
+Patient ID: 24, Doctor ID: 23
+UPDATE executed, rows affected: 1
+Verification: assigned_doctor_id = 23
+
+[2026-03-02 15:23:52] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":23,"patient_id":24}
+Patient ID: 24, Doctor ID: 23
+UPDATE executed, rows affected: 1
+Verification: assigned_doctor_id = 23
+
+[2026-03-02 15:31:30] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":19,"patient_id":22}
+Patient ID: 22, Doctor ID: 19
+UPDATE executed, rows affected: 1
+Verification: assigned_doctor_id = 19
+
+[2026-03-02 15:31:39] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":13,"patient_id":24}
+Patient ID: 24, Doctor ID: 13
+UPDATE executed, rows affected: 1
+Verification: assigned_doctor_id = 13
+
+[2026-03-03 16:35:24] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":25,"patient_id":27}
+Patient ID: 27, Doctor ID: 25
+UPDATE executed, rows affected: 1
+Verification: assigned_doctor_id = 25
+
+[2026-03-05 15:51:11] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":8,"patient_id":7}
+Patient ID: 7, Doctor ID: 8
+UPDATE executed, rows affected: 1
+Verification: assigned_doctor_id = 8
+
+[2026-03-05 15:51:13] Assignment request received
+Auth role: ADMIN
+Request body: {"doctor_id":8,"patient_id":1}
+Patient ID: 1, Doctor ID: 8
+UPDATE executed, rows affected: 1
+Verification: assigned_doctor_id = 8
+

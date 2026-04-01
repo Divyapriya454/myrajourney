@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="350dp"
+    android:viewportWidth="400"
+    android:viewportHeight="350">
+    
+    <!-- Fingers Partially Closing - Large and Clear -->
+    
+    <!-- Forearm -->
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M150,250 L250,250 L250,300 L150,300 Z" />
+    
+    <!-- Wrist -->
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M190,245 A10,10 0 1,1 210,245 A10,10 0 1,1 190,245 Z" />
+    
+    <!-- Palm -->
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M150,180 L250,180 L250,250 L150,250 Z" />
+    
+    <!-- Fingers partially bent (curving inward) -->
+    <!-- Pinky (curving) -->
+    <path android:fillColor="#FFDBCB" android:pathData="M160,120 L180,125 L175,180 L160,180 Z" />
+    <!-- Ring finger (curving) -->
+    <path android:fillColor="#FFDBCB" android:pathData="M185,110 L205,115 L200,180 L185,180 Z" />
+    <!-- Middle finger (curving) -->
+    <path android:fillColor="#FFDBCB" android:pathData="M210,100 L230,105 L225,180 L210,180 Z" />
+    <!-- Index finger (curving) -->
+    <path android:fillColor="#FFDBCB" android:pathData="M235,110 L255,115 L250,180 L235,180 Z" />
+    
+    <!-- Finger joints (bending points) -->
+    <path android:fillColor="#E6C2A6" android:pathData="M170,140 A6,6 0 1,1 170,152 A6,6 0 1,1 170,140 Z" />
+    <path android:fillColor="#E6C2A6" android:pathData="M195,130 A6,6 0 1,1 195,142 A6,6 0 1,1 195,130 Z" />
+    <path android:fillColor="#E6C2A6" android:pathData="M220,120 A6,6 0 1,1 220,132 A6,6 0 1,1 220,120 Z" />
+    <path android:fillColor="#E6C2A6" android:pathData="M245,130 A6,6 0 1,1 245,142 A6,6 0 1,1 245,130 Z" />
+    
+    <!-- Thumb (moving to wrap over) -->
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M125,180 L155,170 L160,190 L130,200 Z" />
+    
+    <!-- Movement arrows showing closing direction -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M180,100 L175,110 L185,110 Z" />
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M205,90 L200,100 L210,100 Z" />
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M230,80 L225,90 L235,90 Z" />
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M255,90 L250,100 L260,100 Z" />
+        
+</vector>

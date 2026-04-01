@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Doctor Dashboard Button Styles -->
+    <style name="DashboardButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/button_text_light</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="DashboardButtonStyle.NewPatient">
+        <item name="android:backgroundTint">@color/button_new_patient_bg</item>
+    </style>
+
+    <style name="DashboardButtonStyle.Schedule">
+        <item name="android:backgroundTint">@color/button_schedule_bg</item>
+    </style>
+
+    <style name="DashboardButtonStyle.Reports">
+        <item name="android:backgroundTint">@color/button_reports_bg</item>
+    </style>
+
+    <style name="DashboardButtonStyle.ManagePatients">
+        <item name="android:backgroundTint">@color/button_manage_patients_bg</item>
+    </style>
+
+    <!-- Dashboard Section Title Style -->
+    <style name="DashboardSectionTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <!-- Dashboard Card Style -->
+    <style name="DashboardCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="cardBackgroundColor">?attr/colorSurface</item>
+    </style>
+
+    <!-- Top Bar Style -->
+    <style name="DashboardTopBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <!-- Bottom Navigation Style -->
+    <style name="DashboardBottomNav">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="BottomNavItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <!-- Navigation Drawer Styles -->
+    <style name="NavigationDrawerStyle" parent="Widget.MaterialComponents.NavigationView">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="itemTextAppearance">@style/NavigationDrawerTextAppearance</item>
+        <item name="itemIconTint">?attr/colorOnSurface</item>
+        <item name="itemTextColor">?attr/colorOnSurface</item>
+        <item name="itemBackground">@drawable/navigation_item_background</item>
+        <item name="android:paddingTop">8dp</item>
+    </style>
+
+    <style name="NavigationDrawerTextAppearance" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+</resources>

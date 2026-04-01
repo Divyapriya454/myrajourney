@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/card_background"
+    android:layout_marginBottom="12dp"
+    android:padding="16dp">
+
+    <!-- Exercise Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Exercise Icon -->
+        <ImageView
+            android:id="@+id/imgExerciseIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_rehab"
+            android:background="@drawable/circle_background"
+            android:padding="12dp"
+            app:tint="@color/primary" />
+
+        <!-- Exercise Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp">
+
+            <TextView
+                android:id="@+id/txtExerciseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wrist Flexion/Extension"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary" />
+
+            <TextView
+                android:id="@+id/txtExerciseCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wrist Exercise • Level 1"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+        <!-- Completion Status -->
+        <ImageView
+            android:id="@+id/imgCompletionStatus"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_check_circle"
+            app:tint="@color/success"
+            android:visibility="gone" />
+
+        <!-- Remove Button -->
+        <ImageView
+            android:id="@+id/btnRemoveExercise"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_delete"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="4dp"
+            android:layout_marginStart="8dp"
+            app:tint="@color/error"
+            android:contentDescription="Remove exercise" />
+
+    </LinearLayout>
+
+    <!-- Exercise Description -->
+    <TextView
+        android:id="@+id/txtExerciseDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gentle wrist movement to improve flexibility and reduce stiffness in wrist joints"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"
+        android:layout_marginTop="8dp" />
+
+    <!-- RA Benefits -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_background"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RA Benefits:"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/txtRaBenefits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Reduces wrist stiffness\n• Improves range of motion\n• Helps maintain joint function"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary" />
+
+    </LinearLayout>
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btnViewInstructions"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="Instructions"
+            android:textSize="12sp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnStartExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="Start Exercise"
+            android:textSize="12sp"
+            android:background="@drawable/button_primary"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <!-- Last Completed Info -->
+    <LinearLayout
+        android:id="@+id/layoutLastCompleted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_clock"
+            app:tint="@color/text_secondary" />
+
+        <TextView
+            android:id="@+id/txtLastCompleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last completed: 2 hours ago"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginStart="4dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

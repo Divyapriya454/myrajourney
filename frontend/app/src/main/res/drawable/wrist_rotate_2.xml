@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="300dp"
+    android:viewportWidth="400"
+    android:viewportHeight="300">
+    
+    <!-- Wrist Rotation Position 2 - Hand Rotated 90 Degrees -->
+    
+    <!-- Upper arm/shoulder -->
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M50,200 L150,200 L150,230 L50,230 Z" />
+    
+    <!-- Forearm (horizontal) -->
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M150,200 L300,200 L300,230 L150,230 Z" />
+    
+    <!-- Wrist joint (prominent) -->
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M290,210 A10,10 0 1,1 290,220 A10,10 0 1,1 290,210 Z" />
+    
+    <!-- Hand (rotated 90 degrees - side view) -->
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M300,180 L330,180 L330,250 L300,250 Z" />
+    
+    <!-- Fingers (side profile) -->
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M330,185 L350,185 L350,195 L330,195 Z" />
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M330,200 L355,200 L355,210 L330,210 Z" />
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M330,215 L355,215 L355,225 L330,225 Z" />
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M330,230 L350,230 L350,240 L330,240 Z" />
+    
+    <!-- Thumb (top view) -->
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M310,170 L325,160 L335,170 L320,180 Z" />
+    
+    <!-- Rotation arrow (continuing clockwise) -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M380,130 L370,140 L380,150 L390,140 Z" />
+        
+</vector>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="350dp"
+    android:viewportWidth="400"
+    android:viewportHeight="350">
+    
+    <!-- Closed Fist Position - Large and Clear -->
+    
+    <!-- Forearm -->
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M150,250 L250,250 L250,300 L150,300 Z" />
+    
+    <!-- Wrist -->
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M190,245 A10,10 0 1,1 210,245 A10,10 0 1,1 190,245 Z" />
+    
+    <!-- Palm (clenched) -->
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M150,180 L250,180 L250,250 L150,250 Z" />
+    
+    <!-- Fingers curled into fist -->
+    <!-- Pinky (curled) -->
+    <path android:fillColor="#FFDBCB" android:pathData="M160,160 L180,165 L175,185 L155,180 Z" />
+    <!-- Ring finger (curled) -->
+    <path android:fillColor="#FFDBCB" android:pathData="M185,155 L205,160 L200,185 L180,180 Z" />
+    <!-- Middle finger (curled) -->
+    <path android:fillColor="#FFDBCB" android:pathData="M210,150 L230,155 L225,185 L205,180 Z" />
+    <!-- Index finger (curled) -->
+    <path android:fillColor="#FFDBCB" android:pathData="M235,155 L255,160 L250,185 L230,180 Z" />
+    
+    <!-- Knuckles (prominent in fist) -->
+    <path android:fillColor="#E6C2A6" android:pathData="M170,160 A8,8 0 1,1 170,176 A8,8 0 1,1 170,160 Z" />
+    <path android:fillColor="#E6C2A6" android:pathData="M195,155 A8,8 0 1,1 195,171 A8,8 0 1,1 195,155 Z" />
+    <path android:fillColor="#E6C2A6" android:pathData="M220,150 A8,8 0 1,1 220,166 A8,8 0 1,1 220,150 Z" />
+    <path android:fillColor="#E6C2A6" android:pathData="M245,155 A8,8 0 1,1 245,171 A8,8 0 1,1 245,155 Z" />
+    
+    <!-- Thumb wrapped over fingers -->
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M130,170 L160,165 L165,185 L135,190 Z" />
+    
+    <!-- Fist strength indicator -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M200,170 A10,10 0 1,1 200,190 A10,10 0 1,1 200,170 Z" />
+        
+</vector>

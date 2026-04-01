@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Brand colors (DO NOT override in dark mode unless they DIFFER) -->
+    <color name="primary_color">#FF2196F3</color>
+    <color name="primary_dark">#FF1976D2</color>
+    <color name="accent_color">#FFFF9800</color>
+    <color name="secondary_color">#FF4CAF50</color>
+
+    <!-- Dark mode text colors -->
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#FFB3B3B3</color>
+    <color name="text_hint">#FF8A8A8A</color>
+
+    <!-- Dark mode backgrounds -->
+    <color name="background_light">#FF121212</color> <!-- dark background -->
+    <color name="background_card">#FF2B2B2B</color>
+    <color name="background_chat">#FF1B1B1B</color>
+
+    <!-- Dark Theme Core -->
+    <color name="dark_background">#FF121212</color>
+    <color name="dark_surface">#FF1E1E1E</color>
+    <color name="dark_text_primary">#FFFFFFFF</color>
+    <color name="dark_text_secondary">#FFB3B3B3</color>
+    <color name="dark_chat_bot_bg">#FF2C2C2C</color>
+    <color name="dark_chat_bot_border">#FF404040</color>
+
+    <!-- Material You Styled (Optional accents) -->
+    <color name="dark_primary">#FFBB86FC</color>
+    <color name="dark_primary_dark">#FF3700B3</color>
+    <color name="dark_accent">#FF03DAC5</color>
+
+    <!-- Button colors -->
+    <color name="button_new_patient_bg">#FF2B2B2B</color>
+    <color name="button_schedule_bg">#FF2B2B2B</color>
+    <color name="button_reports_bg">#FF2B2B2B</color>
+    <color name="button_text_light">#FF00D4FF</color>
+
+    <!-- AI Insights -->
+    <color name="ai_insights_bg_light">#FF2B2B2B</color>
+    <color name="ai_insights_title_light">#FFFF9800</color>
+
+</resources>

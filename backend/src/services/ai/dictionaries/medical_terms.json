@@ -1,0 +1,151 @@
+{
+  "crp": {
+    "full_name": "C-Reactive Protein",
+    "aliases": [
+      "C-Reactive Protein",
+      "CRP",
+      "C Reactive Protein",
+      "C-reactive protein",
+      "c reactive protein",
+      "hs-CRP",
+      "High Sensitivity CRP"
+    ],
+    "units": ["mg/L", "mg/dL", "mg/dl"],
+    "normal_range": {
+      "min": 0,
+      "max": 3,
+      "unit": "mg/L"
+    },
+    "critical_high": 10,
+    "category": "inflammation",
+    "importance": "high"
+  },
+  "esr": {
+    "full_name": "Erythrocyte Sedimentation Rate",
+    "aliases": [
+      "ESR",
+      "Erythrocyte Sedimentation Rate",
+      "Sed Rate",
+      "Sedimentation Rate",
+      "erythrocyte sedimentation rate"
+    ],
+    "units": ["mm/hr", "mm/hour"],
+    "normal_range": {
+      "min": 0,
+      "max": 20,
+      "unit": "mm/hr"
+    },
+    "critical_high": 50,
+    "category": "inflammation",
+    "importance": "high"
+  },
+  "rf": {
+    "full_name": "Rheumatoid Factor",
+    "aliases": [
+      "RF",
+      "Rheumatoid Factor",
+      "rheumatoid factor",
+      "RA Factor"
+    ],
+    "units": ["IU/mL", "IU/ml", "U/mL"],
+    "normal_range": {
+      "min": 0,
+      "max": 14,
+      "unit": "IU/mL"
+    },
+    "critical_high": 40,
+    "category": "autoimmune",
+    "importance": "high"
+  },
+  "anti_ccp": {
+    "full_name": "Anti-Cyclic Citrullinated Peptide",
+    "aliases": [
+      "Anti-CCP",
+      "Anti CCP",
+      "ACCP",
+      "Anti-Cyclic Citrullinated Peptide",
+      "Cyclic Citrullinated Peptide Antibody",
+      "CCP Antibody"
+    ],
+    "units": ["U/mL", "IU/mL"],
+    "normal_range": {
+      "min": 0,
+      "max": 20,
+      "unit": "U/mL"
+    },
+    "critical_high": 60,
+    "category": "autoimmune",
+    "importance": "high"
+  },
+  "wbc": {
+    "full_name": "White Blood Cell Count",
+    "aliases": [
+      "WBC",
+      "White Blood Cell",
+      "White Blood Cells",
+      "Leukocyte Count",
+      "Total WBC"
+    ],
+    "units": ["10^3/μL", "cells/μL", "K/μL"],
+    "normal_range": {
+      "min": 4.5,
+      "max": 11,
+      "unit": "10^3/μL"
+    },
+    "critical_high": 15,
+    "category": "blood_count",
+    "importance": "medium"
+  },
+  "hemoglobin": {
+    "full_name": "Hemoglobin",
+    "aliases": [
+      "Hemoglobin",
+      "Hb",
+      "HGB",
+      "Haemoglobin"
+    ],
+    "units": ["g/dL", "g/dl"],
+    "normal_range": {
+      "min": 12,
+      "max": 16,
+      "unit": "g/dL"
+    },
+    "critical_low": 8,
+    "category": "blood_count",
+    "importance": "medium"
+  },
+  "platelet": {
+    "full_name": "Platelet Count",
+    "aliases": [
+      "Platelet",
+      "Platelets",
+      "PLT",
+      "Platelet Count"
+    ],
+    "units": ["10^3/μL", "K/μL"],
+    "normal_range": {
+      "min": 150,
+      "max": 400,
+      "unit": "10^3/μL"
+    },
+    "critical_low": 50,
+    "category": "blood_count",
+    "importance": "medium"
+  },
+  "ana": {
+    "full_name": "Antinuclear Antibody",
+    "aliases": [
+      "ANA",
+      "Antinuclear Antibody",
+      "Anti-Nuclear Antibody"
+    ],
+    "units": ["titer", "ratio"],
+    "normal_range": {
+      "min": 0,
+      "max": 1,
+      "unit": "titer"
+    },
+    "category": "autoimmune",
+    "importance": "medium"
+  }
+}

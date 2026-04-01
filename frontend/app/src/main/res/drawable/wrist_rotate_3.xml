@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="300dp"
+    android:viewportWidth="400"
+    android:viewportHeight="300">
+    
+    <!-- Wrist Rotation Position 3 - Palm Facing Down -->
+    
+    <!-- Upper arm/shoulder -->
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M50,200 L150,200 L150,230 L50,230 Z" />
+    
+    <!-- Forearm (horizontal) -->
+    <path
+        android:fillColor="#FFDBCB"
+        android:pathData="M150,200 L300,200 L300,230 L150,230 Z" />
+    
+    <!-- Wrist joint (prominent) -->
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M290,210 A10,10 0 1,1 290,220 A10,10 0 1,1 290,210 Z" />
+    
+    <!-- Hand (palm facing down - back of hand visible) -->
+    <path
+        android:fillColor="#E6C2A6"
+        android:pathData="M300,150 L350,150 L350,250 L300,250 Z" />
+    
+    <!-- Knuckles (back of hand) -->
+    <path
+        android:fillColor="#D4A574"
+        android:pathData="M350,165 A5,5 0 1,1 350,175 A5,5 0 1,1 350,165 Z" />
+    <path
+        android:fillColor="#D4A574"
+        android:pathData="M350,185 A5,5 0 1,1 350,195 A5,5 0 1,1 350,185 Z" />
+    <path
+        android:fillColor="#D4A574"
+        android:pathData="M350,205 A5,5 0 1,1 350,215 A5,5 0 1,1 350,205 Z" />
+    <path
+        android:fillColor="#D4A574"
+        android:pathData="M350,225 A5,5 0 1,1 350,235 A5,5 0 1,1 350,225 Z" />
+    
+    <!-- Fingers (back view) -->
+    <path
+        android:fillColor="#E6C2A6"
+        android:pathData="M350,155 L365,155 L365,170 L350,170 Z" />
+    <path
+        android:fillColor="#E6C2A6"
+        android:pathData="M350,175 L370,175 L370,190 L350,190 Z" />
+    <path
+        android:fillColor="#E6C2A6"
+        android:pathData="M350,195 L370,195 L370,210 L350,210 Z" />
+    <path
+        android:fillColor="#E6C2A6"
+        android:pathData="M350,215 L365,215 L365,230 L350,230 Z" />
+    
+    <!-- Thumb (barely visible from back) -->
+    <path
+        android:fillColor="#E6C2A6"
+        android:pathData="M295,140 L305,135 L310,145 L300,150 Z" />
+    
+    <!-- Rotation arrow (continuing) -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M350,100 L340,110 L350,120 L360,110 Z" />
+        
+</vector>

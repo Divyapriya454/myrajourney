@@ -1,0 +1,18 @@
+﻿--- Recent Plans and their Exercise/Schedule counts ---
+Plan ID: 54 | Patient: 1 | Title: Rehab Plan - Mar 05, 2026 | Exercises: 2 | Schedules: 22
+Plan ID: 53 | Patient: 1 | Title: Rehab Plan - Mar 05, 2026 | Exercises: 1 | Schedules: 11
+Plan ID: 52 | Patient: 7 | Title: Finger Flexion | Exercises: 0 | Schedules: 0
+Plan ID: 51 | Patient: 1 | Title: Knee Flexion | Exercises: 0 | Schedules: 0
+Plan ID: 50 | Patient: 1 | Title: Assigned Therapy Plan | Exercises: 1 | Schedules: 11
+Plan ID: 49 | Patient: 1 | Title: Assigned Therapy Plan | Exercises: 1 | Schedules: 11
+Plan ID: 48 | Patient: 1 | Title: Assigned Therapy Plan | Exercises: 1 | Schedules: 11
+Plan ID: 47 | Patient: 1 | Title: Diagnostic Test 17:44:31 | Exercises: 1 | Schedules: 11
+Plan ID: 46 | Patient: 1 | Title: Assigned Therapy Plan | Exercises: 1 | Schedules: 11
+Plan ID: 45 | Patient: 1 | Title: Assigned Therapy Plan | Exercises: 1 | Schedules: 11
+
+--- Recent Schedule Dates for Patient 1 ---
+Date: 2026-04-04
+Date: 2026-04-02
+Date: 2026-04-01
+Date: 2026-03-31
+Date: 2026-03-29

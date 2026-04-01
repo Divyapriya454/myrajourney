@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    
+    <!-- Knee Flexion Animation - Seated Leg Extension -->
+    <!-- Knee bent (starting position) -->
+    <item android:drawable="@drawable/knee_bent" android:duration="1000" />
+    <!-- Begin straightening leg -->
+    <item android:drawable="@drawable/knee_straightening" android:duration="700" />
+    <!-- Continue straightening -->
+    <item android:drawable="@drawable/knee_straightening" android:duration="500" />
+    <!-- Leg fully straight -->
+    <item android:drawable="@drawable/knee_straight" android:duration="1200" />
+    <!-- Begin bending leg -->
+    <item android:drawable="@drawable/knee_bending" android:duration="700" />
+    <!-- Continue bending -->
+    <item android:drawable="@drawable/knee_bending" android:duration="500" />
+    <!-- Back to bent position -->
+    <item android:drawable="@drawable/knee_bent" android:duration="500" />
+    
+</animation-list>

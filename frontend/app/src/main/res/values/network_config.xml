@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- CENTRALIZED DEPLOYED SERVER CONFIGURATION -->
+    <string name="api_base_ip">14.139.187.229</string>
+    <string name="api_port">8081</string>
+
+    <!-- DEPLOYED SERVER URLS -->
+    <string name="api_base_url">http://14.139.187.229:8081/sept_batch2025/spic726/myrajourney/public/index.php/api/v1/</string>
+    <string name="admin_api_url">http://14.139.187.229:8081/sept_batch2025/spic726/myrajourney/public/index.php/myra-admin.php</string>
+
+    <!-- FORMATTED URLS FOR RUNTIME USE -->
+    <string name="api_base_url_formatted" formatted="false">http://14.139.187.229:8081/sept_batch2025/spic726/myrajourney/public/index.php/api/v1/</string>
+    <string name="admin_api_url_formatted" formatted="false">http://14.139.187.229:8081/sept_batch2025/spic726/myrajourney/public/index.php/myra-admin.php</string>
+</resources>

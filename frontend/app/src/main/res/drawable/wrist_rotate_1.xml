@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="600dp"
+    android:height="400dp"
+    android:viewportWidth="600"
+    android:viewportHeight="400">
+    
+    <!-- Full Body Wrist Rotation - Position 1 (Like the reference image) -->
+    
+    <!-- Person's torso/chest -->
+    <path
+        android:fillColor="#E8B896"
+        android:pathData="M200,150 L400,150 L420,250 L180,250 Z" />
+    
+    <!-- Shoulder -->
+    <path
+        android:fillColor="#D4A574"
+        android:pathData="M180,150 A25,25 0 1,1 230,150 A25,25 0 1,1 180,150 Z" />
+    
+    <!-- Upper arm (realistic proportions) -->
+    <path
+        android:fillColor="#E8B896"
+        android:pathData="M180,175 L220,175 L240,220 L160,220 Z" />
+    
+    <!-- Elbow joint -->
+    <path
+        android:fillColor="#D4A574"
+        android:pathData="M190,215 A15,15 0 1,1 210,215 A15,15 0 1,1 190,215 Z" />
+    
+    <!-- Forearm (extended horizontally like in reference) -->
+    <path
+        android:fillColor="#E8B896"
+        android:pathData="M200,200 L450,200 L450,240 L200,240 Z" />
+    
+    <!-- Wrist joint (prominent) -->
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M440,215 A12,12 0 1,1 440,225 A12,12 0 1,1 440,215 Z" />
+    
+    <!-- Hand (palm facing viewer - position 1) -->
+    <path
+        android:fillColor="#E8B896"
+        android:pathData="M450,160 L520,160 L520,280 L450,280 Z" />
+    
+    <!-- Individual fingers (detailed) -->
+    <!-- Pinky -->
+    <path android:fillColor="#E8B896" android:pathData="M460,140 L480,140 L480,160 L460,160 Z" />
+    <!-- Ring finger -->
+    <path android:fillColor="#E8B896" android:pathData="M485,130 L505,130 L505,160 L485,160 Z" />
+    <!-- Middle finger -->
+    <path android:fillColor="#E8B896" android:pathData="M510,125 L530,125 L530,160 L510,160 Z" />
+    <!-- Index finger -->
+    <path android:fillColor="#E8B896" android:pathData="M535,130 L555,130 L555,160 L535,160 Z" />
+    
+    <!-- Thumb (side view) -->
+    <path
+        android:fillColor="#E8B896"
+        android:pathData="M430,180 L460,165 L470,185 L440,200 Z" />
+    
+    <!-- Knuckles and joints -->
+    <path android:fillColor="#D4A574" android:pathData="M470,160 A4,4 0 1,1 470,168 A4,4 0 1,1 470,160 Z" />
+    <path android:fillColor="#D4A574" android:pathData="M495,160 A4,4 0 1,1 495,168 A4,4 0 1,1 495,160 Z" />
+    <path android:fillColor="#D4A574" android:pathData="M520,160 A4,4 0 1,1 520,168 A4,4 0 1,1 520,160 Z" />
+    <path android:fillColor="#D4A574" android:pathData="M545,160 A4,4 0 1,1 545,168 A4,4 0 1,1 545,160 Z" />
+    
+    <!-- Rotation arrow (large and clear) -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M480,80 A40,40 0 0,1 560,120 L550,110 L570,130 L550,150 Z"
+        android:strokeWidth="6"
+        android:strokeColor="#4CAF50" />
+    
+    <!-- Exercise instruction text area -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M50,50 L550,50 L550,100 L50,100 Z"
+        android:fillAlpha="0.1" />
+        
+</vector>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Wrist extension position -->
+    <group android:name="hand">
+        <!-- Forearm -->
+        <path
+            android:fillColor="#FFB74D"
+            android:pathData="M60,150 L140,150 L140,180 L60,180 Z" />
+        
+        <!-- Wrist joint -->
+        <path
+            android:fillColor="#FF8A65"
+            android:pathData="M92,150 A8,8 0 1,1 108,150 A8,8 0 1,1 92,150 Z" />
+        
+        <!-- Hand (extended up) -->
+        <path
+            android:fillColor="#FFCC02"
+            android:pathData="M85,120 L115,110 L115,140 L85,150 Z" />
+        
+        <!-- Fingers (angled up) -->
+        <path
+            android:fillColor="#FFCC02"
+            android:pathData="M88,100 L95,95 L92,110 L85,115 Z" />
+        <path
+            android:fillColor="#FFCC02"
+            android:pathData="M95,95 L105,90 L102,110 L92,115 Z" />
+        <path
+            android:fillColor="#FFCC02"
+            android:pathData="M105,100 L112,95 L109,110 L102,115 Z" />
+        
+        <!-- Thumb -->
+        <path
+            android:fillColor="#FFCC02"
+            android:pathData="M78,130 L85,125 L88,135 L81,140 Z" />
+    </group>
+    
+
+        
+</vector>

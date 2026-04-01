@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="← Back"
+                android:background="@android:color/transparent"
+                android:textColor="#2196F3"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Assign RA Exercises"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <!-- Patient Selection -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Patient"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerPatients"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#fff"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="2dp" />
+
+        <!-- Patient Info -->
+        <TextView
+            android:id="@+id/tv_patient_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select a patient to assign exercises"
+            android:textSize="16sp"
+            android:textColor="#666"
+            android:background="#fff"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="2dp" />
+
+        <!-- Custom Sets and Duration (Optional) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Custom Sets &amp; Duration (Optional)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leave empty to use default values for each exercise"
+            android:textSize="12sp"
+            android:textColor="#666"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/et_frequency_per_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Sets per day (e.g. 3)"
+                android:inputType="number"
+                android:background="#fff"
+                android:padding="12dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="2dp" />
+
+            <EditText
+                android:id="@+id/et_duration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Duration (e.g. 2 weeks)"
+                android:inputType="text"
+                android:background="#fff"
+                android:padding="12dp"
+                android:layout_marginStart="8dp"
+                android:elevation="2dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Instructions (e.g. perform slowly, focus on form)"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:gravity="top|start"
+            android:background="#fff"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="2dp" />
+
+        <!-- Exercise Checklist Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Exercises to Assign"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Exercise Checklist Container -->
+        <LinearLayout
+            android:id="@+id/medication_checklist_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#fff"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="2dp">
+            
+            <!-- Checkboxes will be added programmatically -->
+            
+        </LinearLayout>
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Assign Button -->
+        <Button
+            android:id="@+id/btn_assign"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Select Patient &amp; Exercises"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="#2196F3"
+            android:textColor="#fff"
+            android:enabled="false"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp" />
+
+        <!-- Instructions -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instructions:\n• Select a patient from the dropdown\n• Check the exercises you want to assign\n• Use custom sets/duration or leave empty for defaults\n• Duplicate exercises will be skipped automatically\n• All selected exercises will be assigned at once"
+            android:textSize="12sp"
+            android:textColor="#666"
+            android:background="#fff"
+            android:padding="12dp"
+            android:elevation="2dp" />
+
+    </LinearLayout>
+
+</ScrollView>
